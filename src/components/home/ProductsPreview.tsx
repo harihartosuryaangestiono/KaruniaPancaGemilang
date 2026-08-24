@@ -11,11 +11,11 @@ export const ProductsPreview: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <AnimatedSection direction="up" className="mb-16 max-w-2xl">
-          <span className="text-xs font-bold uppercase tracking-widest text-kpg-gold-600">
-            PRODUCT PORTFOLIO
+          <span className="text-xs font-mono font-semibold tracking-widest text-kpg-gold-600 uppercase">
+            03 — PRODUCTS
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-kpg-green-900 mt-2">
-            Products
+            Plywood & Veneer
           </h2>
           <p className="text-base text-kpg-text-secondary font-light mt-3">
             Plywood and veneer materials supporting industrial, commercial, and construction requirements.
@@ -79,9 +79,9 @@ export const ProductsPreview: React.FC = () => {
                     ))}
                   </ul>
 
-                  {/* Factual Disclaimer */}
+                  {/* Mandatory Factual Disclaimer */}
                   <p className="text-xs text-kpg-text-muted italic pt-1">
-                    * Exact product specifications available upon request.
+                    * Product specifications available upon request.
                   </p>
 
                   {/* Link */}

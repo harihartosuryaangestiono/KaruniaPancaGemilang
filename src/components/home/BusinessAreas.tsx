@@ -11,11 +11,11 @@ export const BusinessAreas: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <AnimatedSection direction="up" className="mb-16 max-w-2xl">
-          <span className="text-xs font-bold uppercase tracking-widest text-kpg-gold-600">
-            BUSINESS CAPABILITIES
+          <span className="text-xs font-mono font-semibold tracking-widest text-kpg-gold-600 uppercase">
+            02 — OUR BUSINESS
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-kpg-green-900 mt-2">
-            Our Business
+            Business Capabilities
           </h2>
           <p className="text-base text-kpg-text-secondary font-light mt-3">
             Three integrated capabilities supporting timber operations, product supply, and logistics.

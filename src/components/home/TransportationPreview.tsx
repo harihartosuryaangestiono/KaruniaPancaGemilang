@@ -11,8 +11,8 @@ export const TransportationPreview: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Left Text */}
           <AnimatedSection direction="left" className="lg:col-span-6 space-y-6">
-            <span className="text-xs font-bold uppercase tracking-widest text-kpg-gold-600">
-              LOGISTICS SUPPORT
+            <span className="text-xs font-mono font-semibold tracking-widest text-kpg-gold-600 uppercase">
+              06 — LOGISTICS SUPPORT
             </span>
 
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-kpg-green-900 leading-tight">
@@ -48,7 +48,7 @@ export const TransportationPreview: React.FC = () => {
                 href="/transportation"
                 className="inline-flex items-center gap-2 text-kpg-green-900 font-bold hover:text-kpg-gold-600 transition-colors text-sm lg:text-base group"
               >
-                <span>View Transportation Services</span>
+                <span>View KPG Transportation Services</span>
                 <ArrowRight className="w-4 h-4 text-kpg-gold-500 group-hover:translate-x-1.5 transition-transform" />
               </Link>
             </div>

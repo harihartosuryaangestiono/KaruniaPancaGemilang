@@ -22,7 +22,8 @@ export async function POST(request: Request) {
       );
     }
 
-    const emailApiKey = process.env.RESEND_API_KEY || process.env.EMAIL_API_KEY;
+    const rawKey = process.env.RESEND_API_KEY || process.env.EMAIL_API_KEY;
+    const emailApiKey = rawKey && !rawKey.includes("your_resend_api_key") ? rawKey : null;
     const recipientEmail = process.env.CONTACT_TO_EMAIL || COMPANY_CONFIG.email;
 
     // Option B: Unconfigured Mode (No fake success message when backend email service is unconfigured)

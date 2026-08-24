@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { ContactCTA } from "@/components/home/ContactCTA";
+import { AnimatedSection, AnimatedStagger, AnimatedStaggerItem } from "@/components/ui/AnimatedSection";
 
 export const metadata = {
   title: "About Us | PT Karunia Panca Gemilang",
@@ -14,25 +15,27 @@ export default function AboutPage() {
       {/* Page Header */}
       <section className="py-20 bg-kpg-bg-offwhite border-b border-kpg-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <span className="text-xs font-bold uppercase tracking-widest text-kpg-gold-600">
-            COMPANY PROFILE
-          </span>
-          <h1 className="text-4xl sm:text-5xl font-bold text-kpg-green-900 mt-2">
-            About PT Karunia Panca Gemilang
-          </h1>
-          <p className="text-base text-kpg-text-secondary font-light max-w-2xl mt-3">
-            Engaged in wood processing, veneer processing, plywood trading, and transportation & freight services.
-          </p>
+          <AnimatedSection direction="up">
+            <span className="text-xs font-mono font-semibold uppercase tracking-widest text-kpg-gold-600">
+              COMPANY PROFILE
+            </span>
+            <h1 className="text-4xl sm:text-5xl font-bold text-kpg-green-900 mt-2">
+              About PT Karunia Panca Gemilang
+            </h1>
+            <p className="text-base text-kpg-text-secondary font-light max-w-2xl mt-3">
+              Engaged in wood processing, veneer processing, plywood trading, and transportation & freight services.
+            </p>
+          </AnimatedSection>
         </div>
       </section>
 
-      {/* 01 WHO WE ARE */}
+      {/* 01 — WHO WE ARE */}
       <section className="py-20 bg-white border-b border-kpg-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            <div className="lg:col-span-6 space-y-6">
-              <span className="text-xs font-mono font-bold text-kpg-gold-600">
-                01 / WHO WE ARE
+            <AnimatedSection direction="left" className="lg:col-span-6 space-y-6">
+              <span className="text-xs font-mono font-semibold tracking-widest text-kpg-gold-600 uppercase">
+                01 — WHO WE ARE
               </span>
               <h2 className="text-3xl sm:text-4xl font-bold text-kpg-green-900 leading-tight">
                 An Integrated Timber & Freight Operation.
@@ -43,10 +46,10 @@ export default function AboutPage() {
               <p className="text-base text-kpg-text-secondary font-light leading-relaxed">
                 We support industrial and commercial requirements by combining processing operations, material supply, and reliable heavy cargo transport.
               </p>
-            </div>
+            </AnimatedSection>
 
-            <div className="lg:col-span-6">
-              <div className="relative rounded-2xl overflow-hidden border border-kpg-border h-[380px] w-full img-zoom-container">
+            <AnimatedSection direction="right" className="lg:col-span-6">
+              <div className="relative rounded-2xl overflow-hidden border border-kpg-border h-[380px] w-full img-zoom-container shadow-sm">
                 <Image
                   src="https://images.unsplash.com/photo-1546484475-7f7bd55792da?q=80&w=1200&auto=format&fit=crop"
                   alt="PT Karunia Panca Gemilang Facility"
@@ -55,123 +58,127 @@ export default function AboutPage() {
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </div>
-            </div>
+            </AnimatedSection>
           </div>
         </div>
       </section>
 
-      {/* 02 WHAT WE DO */}
+      {/* 02 — WHAT WE DO */}
       <section className="py-20 bg-kpg-bg-offwhite border-b border-kpg-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-          <div className="max-w-2xl space-y-2">
-            <span className="text-xs font-mono font-bold text-kpg-gold-600">
-              02 / WHAT WE DO
+          <AnimatedSection direction="up" className="max-w-2xl space-y-2">
+            <span className="text-xs font-mono font-semibold tracking-widest text-kpg-gold-600 uppercase">
+              02 — WHAT WE DO
             </span>
             <h2 className="text-3xl sm:text-4xl font-bold text-kpg-green-900">
               Three Integrated Business Capabilities
             </h2>
-          </div>
+          </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="border-t-2 border-kpg-gold-500 pt-6 space-y-3">
+          <AnimatedStagger className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <AnimatedStaggerItem className="border-t-2 border-kpg-gold-500 pt-6 space-y-3">
               <h3 className="text-xl font-bold text-kpg-green-900">Wood Processing</h3>
               <p className="text-xs text-kpg-text-secondary font-light leading-relaxed">
                 Processing wood materials through controlled operations to support product supply requirements.
               </p>
-            </div>
+            </AnimatedStaggerItem>
 
-            <div className="border-t-2 border-kpg-gold-500 pt-6 space-y-3">
+            <AnimatedStaggerItem className="border-t-2 border-kpg-gold-500 pt-6 space-y-3">
               <h3 className="text-xl font-bold text-kpg-green-900">Plywood & Veneer</h3>
               <p className="text-xs text-kpg-text-secondary font-light leading-relaxed">
                 Providing plywood products and processed veneer sheets for industrial and commercial applications.
               </p>
-            </div>
+            </AnimatedStaggerItem>
 
-            <div className="border-t-2 border-kpg-gold-500 pt-6 space-y-3">
+            <AnimatedStaggerItem className="border-t-2 border-kpg-gold-500 pt-6 space-y-3">
               <h3 className="text-xl font-bold text-kpg-green-900">Transportation & Freight</h3>
               <p className="text-xs text-kpg-text-secondary font-light leading-relaxed">
                 Heavy-duty cargo transportation supporting product distribution and raw material logistics.
               </p>
-            </div>
-          </div>
+            </AnimatedStaggerItem>
+          </AnimatedStagger>
         </div>
       </section>
 
-      {/* 03 OUR APPROACH */}
+      {/* 03 — OUR APPROACH */}
       <section className="py-20 bg-white border-b border-kpg-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-          <div className="max-w-2xl space-y-2">
-            <span className="text-xs font-mono font-bold text-kpg-gold-600">
-              03 / OUR APPROACH
+          <AnimatedSection direction="up" className="max-w-2xl space-y-2">
+            <span className="text-xs font-mono font-semibold tracking-widest text-kpg-gold-600 uppercase">
+              03 — OUR APPROACH
             </span>
             <h2 className="text-3xl sm:text-4xl font-bold text-kpg-green-900">
               Factual Operational Principles
             </h2>
-          </div>
+          </AnimatedSection>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="border-t border-kpg-border pt-6 space-y-2">
+          <AnimatedStagger className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <AnimatedStaggerItem className="border-t border-kpg-border pt-6 space-y-2">
               <span className="text-xs font-mono text-kpg-gold-600 font-bold">01. PRODUCT</span>
               <h4 className="text-base font-bold text-kpg-green-900">Product Sourcing</h4>
               <p className="text-xs text-kpg-text-secondary font-light leading-relaxed">
                 Understanding product requirements for industrial and commercial applications.
               </p>
-            </div>
+            </AnimatedStaggerItem>
 
-            <div className="border-t border-kpg-border pt-6 space-y-2">
+            <AnimatedStaggerItem className="border-t border-kpg-border pt-6 space-y-2">
               <span className="text-xs font-mono text-kpg-gold-600 font-bold">02. PROCESS</span>
               <h4 className="text-base font-bold text-kpg-green-900">Operational Execution</h4>
               <p className="text-xs text-kpg-text-secondary font-light leading-relaxed">
                 Consistent execution across processing, veneer, and trading.
               </p>
-            </div>
+            </AnimatedStaggerItem>
 
-            <div className="border-t border-kpg-border pt-6 space-y-2">
+            <AnimatedStaggerItem className="border-t border-kpg-border pt-6 space-y-2">
               <span className="text-xs font-mono text-kpg-gold-600 font-bold">03. QUALITY</span>
               <h4 className="text-base font-bold text-kpg-green-900">Process Consistency</h4>
               <p className="text-xs text-kpg-text-secondary font-light leading-relaxed">
                 Focus on product and process consistency to meet client expectations.
               </p>
-            </div>
+            </AnimatedStaggerItem>
 
-            <div className="border-t border-kpg-border pt-6 space-y-2">
+            <AnimatedStaggerItem className="border-t border-kpg-border pt-6 space-y-2">
               <span className="text-xs font-mono text-kpg-gold-600 font-bold">04. DELIVERY</span>
               <h4 className="text-base font-bold text-kpg-green-900">Freight Logistics</h4>
               <p className="text-xs text-kpg-text-secondary font-light leading-relaxed">
                 Supporting product movement through KPG Transportation.
               </p>
-            </div>
-          </div>
+            </AnimatedStaggerItem>
+          </AnimatedStagger>
         </div>
       </section>
 
-      {/* 04 OUR COMMITMENT */}
+      {/* 04 — OUR COMMITMENT */}
       <section className="py-20 bg-kpg-bg-offwhite border-b border-kpg-border">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl space-y-4 text-left">
-          <span className="text-xs font-mono font-bold text-kpg-gold-600">
-            04 / OUR COMMITMENT
-          </span>
-          <h2 className="text-3xl font-bold text-kpg-green-900">
-            Operational Reliability
-          </h2>
-          <p className="text-base text-kpg-text-secondary font-light leading-relaxed">
-            We are committed to maintaining operational focus across our processing activities, product supply channels, and transportation services, delivering dependable service to our clients and business partners.
-          </p>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AnimatedSection direction="up" className="max-w-3xl space-y-4 text-left">
+            <span className="text-xs font-mono font-semibold tracking-widest text-kpg-gold-600 uppercase">
+              04 — OUR COMMITMENT
+            </span>
+            <h2 className="text-3xl font-bold text-kpg-green-900">
+              Operational Reliability
+            </h2>
+            <p className="text-base text-kpg-text-secondary font-light leading-relaxed">
+              We are committed to maintaining operational focus across our processing activities, product supply channels, and transportation services, delivering dependable service to our clients and business partners.
+            </p>
+          </AnimatedSection>
         </div>
       </section>
 
-      {/* 05 OUR DIRECTION */}
+      {/* 05 — OUR DIRECTION */}
       <section className="py-20 bg-white border-b border-kpg-border">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl space-y-4 text-left">
-          <span className="text-xs font-mono font-bold text-kpg-gold-600">
-            05 / OUR DIRECTION
-          </span>
-          <h2 className="text-3xl font-bold text-kpg-green-900">
-            Strategic Direction
-          </h2>
-          <p className="text-base text-kpg-text-secondary font-light leading-relaxed">
-            Our goal is to build long-term corporate relationships by maintaining consistency in wood processing, veneer supply, plywood trading, and cargo logistics services.
-          </p>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AnimatedSection direction="up" className="max-w-3xl space-y-4 text-left">
+            <span className="text-xs font-mono font-semibold tracking-widest text-kpg-gold-600 uppercase">
+              05 — OUR DIRECTION
+            </span>
+            <h2 className="text-3xl font-bold text-kpg-green-900">
+              Strategic Direction
+            </h2>
+            <p className="text-base text-kpg-text-secondary font-light leading-relaxed">
+              Our goal is to build long-term corporate relationships by maintaining consistency in wood processing, veneer supply, plywood trading, and cargo logistics services.
+            </p>
+          </AnimatedSection>
         </div>
       </section>
 

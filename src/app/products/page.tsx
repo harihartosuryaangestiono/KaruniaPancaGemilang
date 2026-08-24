@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ContactCTA } from "@/components/home/ContactCTA";
+import { AnimatedSection, AnimatedStagger, AnimatedStaggerItem } from "@/components/ui/AnimatedSection";
 
 export const metadata = {
   title: "Products | PT Karunia Panca Gemilang",
@@ -15,15 +16,17 @@ export default function ProductsPage() {
       {/* Header */}
       <section className="py-20 bg-kpg-bg-offwhite border-b border-kpg-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <span className="text-xs font-bold uppercase tracking-widest text-kpg-gold-600">
-            PRODUCT PORTFOLIO
-          </span>
-          <h1 className="text-4xl sm:text-5xl font-bold text-kpg-green-900 mt-2">
-            Plywood & Veneer Portfolio
-          </h1>
-          <p className="text-base text-kpg-text-secondary font-light max-w-2xl mt-3">
-            Providing wood veneer and plywood supply options for commercial and manufacturing partners.
-          </p>
+          <AnimatedSection direction="up">
+            <span className="text-xs font-mono font-semibold uppercase tracking-widest text-kpg-gold-600">
+              PRODUCT PORTFOLIO
+            </span>
+            <h1 className="text-4xl sm:text-5xl font-bold text-kpg-green-900 mt-2">
+              Plywood & Veneer Portfolio
+            </h1>
+            <p className="text-base text-kpg-text-secondary font-light max-w-2xl mt-3">
+              Providing wood veneer and plywood supply options for commercial and manufacturing partners.
+            </p>
+          </AnimatedSection>
         </div>
       </section>
 
@@ -32,7 +35,7 @@ export default function ProductsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
           {/* Category 1: Plywood */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            <div className="lg:col-span-6 space-y-6">
+            <AnimatedSection direction="left" className="lg:col-span-6 space-y-6">
               <span className="text-xs font-mono font-bold text-kpg-gold-600">
                 PRODUCT 01
               </span>
@@ -70,10 +73,10 @@ export default function ProductsPage() {
                   <span>Explore Plywood Details</span>
                 </Link>
               </div>
-            </div>
+            </AnimatedSection>
 
-            <div className="lg:col-span-6">
-              <div className="relative rounded-2xl overflow-hidden border border-kpg-border h-[360px] w-full img-zoom-container">
+            <AnimatedSection direction="right" className="lg:col-span-6">
+              <div className="relative rounded-2xl overflow-hidden border border-kpg-border h-[360px] w-full img-zoom-container shadow-sm">
                 <Image
                   src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=1200&auto=format&fit=crop"
                   alt="PT Karunia Panca Gemilang Plywood Storage"
@@ -82,12 +85,12 @@ export default function ProductsPage() {
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </div>
-            </div>
+            </AnimatedSection>
           </div>
 
           {/* Category 2: Veneer */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            <div className="lg:col-span-6 lg:order-2 space-y-6">
+            <AnimatedSection direction="left" className="lg:col-span-6 lg:order-2 space-y-6">
               <span className="text-xs font-mono font-bold text-kpg-gold-600">
                 PRODUCT 02
               </span>
@@ -125,10 +128,10 @@ export default function ProductsPage() {
                   <span>Explore Veneer Details</span>
                 </Link>
               </div>
-            </div>
+            </AnimatedSection>
 
-            <div className="lg:col-span-6 lg:order-1">
-              <div className="relative rounded-2xl overflow-hidden border border-kpg-border h-[360px] w-full img-zoom-container">
+            <AnimatedSection direction="right" className="lg:col-span-6 lg:order-1">
+              <div className="relative rounded-2xl overflow-hidden border border-kpg-border h-[360px] w-full img-zoom-container shadow-sm">
                 <Image
                   src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=1200&auto=format&fit=crop"
                   alt="PT Karunia Panca Gemilang Veneer Processing"
@@ -137,7 +140,7 @@ export default function ProductsPage() {
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </div>
-            </div>
+            </AnimatedSection>
           </div>
         </div>
       </section>

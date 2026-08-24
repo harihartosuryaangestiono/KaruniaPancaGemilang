@@ -12,8 +12,8 @@ export const WhoWeAre: React.FC = () => {
           {/* Left Text */}
           <AnimatedSection direction="left" className="lg:col-span-6 space-y-6">
             <div className="space-y-3">
-              <span className="text-xs font-bold uppercase tracking-widest text-kpg-gold-600">
-                WHO WE ARE
+              <span className="text-xs font-mono font-semibold tracking-widest text-kpg-gold-600 uppercase">
+                01 — WHO WE ARE
               </span>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-kpg-green-900 leading-tight">
                 From Wood Processing <br />

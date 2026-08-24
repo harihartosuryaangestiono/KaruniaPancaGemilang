@@ -30,23 +30,22 @@
     letter-spacing: -0.01em;
   }
 
-  /* Custom Smooth Corporate Scrollbar */
+  /* Custom Slim Charcoal Corporate Scrollbar (Matching Reference) */
   ::-webkit-scrollbar {
-    width: 9px;
+    width: 6px;
   }
 
   ::-webkit-scrollbar-track {
-    background: #F7F7F4;
+    background: rgba(0, 0, 0, 0.25);
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #173B25;
-    border-radius: 4px;
-    border: 2px solid #F7F7F4;
+    background: #1e1e1e;
+    border-radius: 9999px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: #B88932;
+    background: #000000;
   }
 }
 

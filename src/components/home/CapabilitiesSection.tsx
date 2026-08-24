@@ -11,11 +11,11 @@ export const CapabilitiesSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <AnimatedSection direction="up" className="mb-16 max-w-2xl">
-          <span className="text-xs font-bold uppercase tracking-widest text-kpg-gold-600">
-            OPERATIONAL FRAMEWORK
+          <span className="text-xs font-mono font-semibold tracking-widest text-kpg-gold-600 uppercase">
+            05 — HOW WE OPERATE
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-kpg-green-900 mt-2">
-            How We Operate
+            Operational Framework
           </h2>
           <p className="text-base text-kpg-text-secondary font-light mt-3">
             Core operational capabilities connecting material processing, quality inspection, and cargo freight logistics.
@@ -29,7 +29,7 @@ export const CapabilitiesSection: React.FC = () => {
               <div className="border-t border-kpg-border pt-6 space-y-4 group">
                 <div className="flex items-center justify-between">
                   <span className="text-xs font-mono font-bold text-kpg-gold-600">
-                    Capability 0{idx + 1}
+                    0{idx + 1}
                   </span>
                 </div>
 
