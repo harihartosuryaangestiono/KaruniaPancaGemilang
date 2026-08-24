@@ -17,33 +17,33 @@ export const BUSINESS_AREAS = [
     title: "Wood Processing",
     headline: "Controlled Manufacturing Operations",
     description:
-      "Processing wood materials through controlled operations to support consistent product quality and reliable supply.",
+      "Processing wood materials through controlled operations to support product supply requirements.",
     href: "/capabilities#wood-processing",
     image:
       "https://images.unsplash.com/photo-1546484475-7f7bd55792da?q=80&w=1400&auto=format&fit=crop",
-    badge: "Processing Operations",
+    badge: "Wood Processing",
   },
   {
     id: "02",
     title: "Plywood & Veneer",
-    headline: "Engineered Wood Portfolio",
+    headline: "Product Supply & Trading",
     description:
       "Providing plywood and veneer products for industrial, commercial, and construction requirements.",
     href: "/products",
     image:
       "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1400&auto=format&fit=crop",
-    badge: "Product Portfolio",
+    badge: "Plywood & Veneer",
   },
   {
     id: "03",
     title: "Transportation & Freight",
-    headline: "Heavy-Duty Supply Logistics",
+    headline: "Heavy Cargo Logistics Support",
     description:
-      "Heavy-duty transportation supporting the distribution of products and movement of operational materials.",
+      "Heavy-duty transportation supporting product distribution and industrial logistics.",
     href: "/transportation",
     image:
       "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=1400&auto=format&fit=crop",
-    badge: "KPG Freight Services",
+    badge: "KPG Transportation",
   },
 ];
 
@@ -51,15 +51,15 @@ export const PRODUCT_CATEGORIES = [
   {
     id: "plywood",
     title: "Plywood",
-    headline: "Reliable Plywood Solutions",
+    headline: "Plywood Supply & Trading",
     description:
-      "Reliable plywood products designed to support various industrial, commercial, and construction requirements.",
+      "Plywood products available to support various industrial, commercial, and construction requirements.",
     href: "/products/plywood",
     features: [
-      "High structural stability & bonding integrity",
-      "Consistent thickness & surface finish",
-      "Available for commercial & industrial trade",
-      "Supported by KPG freight delivery",
+      "Suitable for construction, furniture, and packaging applications",
+      "Available for commercial supply and trading contracts",
+      "Product specifications available upon request",
+      "Supported by KPG transportation & freight delivery",
     ],
     image:
       "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=1400&auto=format&fit=crop",
@@ -67,15 +67,15 @@ export const PRODUCT_CATEGORIES = [
   {
     id: "veneer",
     title: "Veneer",
-    headline: "Processed Wood Materials",
+    headline: "Processed Wood Veneer",
     description:
-      "Quality veneer materials processed to support plywood manufacturing and industrial applications.",
+      "Veneer materials processed to support plywood manufacturing and industrial wood applications.",
     href: "/products/veneer",
     features: [
-      "Processed from selected timber stock",
-      "Consistent thickness & smooth peel quality",
-      "Ideal for plywood core & face layer manufacturing",
-      "Reliable supply for industrial manufacturing plants",
+      "Processed veneer sheets for core and face layer applications",
+      "Suitable for plywood production and wood manufacturing plants",
+      "Product specifications available upon request",
+      "Supported by KPG freight logistics and delivery",
     ],
     image:
       "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=1400&auto=format&fit=crop",
@@ -87,76 +87,80 @@ export const CAPABILITIES_LIST = [
     id: "wood-processing",
     title: "Wood Processing",
     description:
-      "Efficient wood processing operations supporting consistent product output.",
+      "Wood processing operations supporting raw timber conversion into usable industrial components.",
     icon: "Trees",
     image: "https://images.unsplash.com/photo-1546484475-7f7bd55792da?q=80&w=1200&auto=format&fit=crop",
   },
   {
-    id: "veneer-production",
-    title: "Veneer Production",
+    id: "veneer-processing",
+    title: "Veneer Processing",
     description:
-      "Processing wood materials into veneer for plywood and industrial applications.",
+      "Veneer peeling and processing operations to support plywood core and face layer production.",
     icon: "Layers",
     image: "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=1200&auto=format&fit=crop",
   },
   {
     id: "plywood-supply",
-    title: "Plywood Supply",
+    title: "Plywood Supply & Trading",
     description:
-      "Reliable plywood sourcing and supply for business and industrial requirements.",
+      "Plywood sourcing, inventory management, and trading for commercial clients.",
     icon: "Boxes",
     image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    id: "quality-inspection",
+    title: "Quality & Inspection",
+    description:
+      "Operational verification and inspection procedures to support product consistency.",
+    icon: "ShieldCheck",
+    image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1200&auto=format&fit=crop",
   },
   {
     id: "material-handling",
     title: "Material Handling",
     description:
-      "Systematic warehousing, timber sorting, and moisture protection prior to dispatch.",
+      "Systematic warehousing and timber sorting prior to logistics dispatch.",
     icon: "Workflow",
     image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200&auto=format&fit=crop",
   },
   {
     id: "transportation",
-    title: "Transportation",
+    title: "Transportation & Freight",
     description:
-      "Heavy-duty transportation supporting product distribution and material delivery.",
+      "Heavy-duty cargo transportation fleet supporting product movement and delivery.",
     icon: "Truck",
     image: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=1200&auto=format&fit=crop",
   },
-  {
-    id: "logistics-support",
-    title: "Logistics Support",
-    description:
-      "Integrated transportation support connecting products, materials, and operational needs.",
-    icon: "Route",
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1200&auto=format&fit=crop",
-  },
 ];
 
-export const WHY_KPG_VALUES = [
+export const OUR_APPROACH = [
   {
     number: "01",
-    title: "Quality Focus",
+    title: "PRODUCT",
+    subtitle: "Product Sourcing",
     description:
-      "We prioritize product quality and consistency throughout our operations.",
+      "Understanding product and material requirements for industrial and commercial applications.",
   },
   {
     number: "02",
-    title: "Reliable Supply",
+    title: "PROCESS",
+    subtitle: "Operational Execution",
     description:
-      "We support customers with dependable product and material supply.",
+      "Consistent operational execution across wood processing, veneer processing, and plywood supply.",
   },
   {
     number: "03",
-    title: "Operational Efficiency",
+    title: "QUALITY",
+    subtitle: "Process Consistency",
     description:
-      "We continuously focus on efficient processes and reliable execution.",
+      "Focus on product and process consistency to meet client expectations.",
   },
   {
     number: "04",
-    title: "Integrated Support",
+    title: "DELIVERY",
+    subtitle: "Freight Logistics",
     description:
-      "Our wood products and transportation capabilities allow us to support broader operational requirements.",
+      "Supporting product movement and cargo distribution through KPG Transportation.",
   },
 ];
 
@@ -164,53 +168,49 @@ export const PROCESS_STEPS = [
   {
     step: "01",
     title: "Material Sourcing",
-    description: "Carefully selected raw wood materials for initial processing.",
+    description: "Raw wood materials prepared for processing operations.",
   },
   {
     step: "02",
-    title: "Veneer & Processing",
-    description: "Precision veneer peeling and plywood manufacturing operations.",
+    title: "Veneer Processing",
+    description: "Veneer peeling and sheet preparation.",
   },
   {
     step: "03",
-    title: "Quality Control",
-    description: "Inspection for dimensional consistency and bonding strength.",
+    title: "Quality Check",
+    description: "Inspection procedures for dimensional consistency.",
   },
   {
     step: "04",
-    title: "Product Storage",
-    description: "Systematic warehousing and inventory management.",
+    title: "Storage & Handling",
+    description: "Warehousing and inventory management.",
   },
   {
     step: "05",
     title: "Transportation",
-    description: "On-time delivery via KPG heavy-duty cargo transportation fleet.",
+    description: "Product delivery via KPG heavy-duty cargo fleet.",
   },
 ];
 
 export const PRODUCT_APPLICATIONS = [
   {
     title: "Industrial Manufacturing",
-    description: "Raw materials & veneer supply for factory production lines.",
+    description: "Processed wood materials and veneer supply for industrial factory requirements.",
   },
   {
     title: "Construction",
-    description: "Structural & formwork plywood supply for building projects.",
+    description: "Plywood products suitable for construction and structural framework needs.",
   },
   {
     title: "Furniture",
-    description: "Quality veneer & wood sheets for furniture manufacturing.",
+    description: "Veneer and plywood materials for furniture and cabinetry production.",
   },
   {
-    title: "Wood Products",
-    description: "Consistent timber components for industrial processors.",
+    title: "Packaging",
+    description: "Plywood sheets for heavy-duty industrial packaging and crating.",
   },
   {
-    title: "Distribution",
-    description: "Wholesale plywood trading and distribution channels.",
-  },
-  {
-    title: "Commercial Logistics",
-    description: "Reliable material freight & heavy cargo transport.",
+    title: "Commercial Applications",
+    description: "Wood and plywood supply for commercial trading and distribution.",
   },
 ];

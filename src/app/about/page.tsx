@@ -1,15 +1,11 @@
 import React from "react";
-import Metadata from "next";
 import Image from "next/image";
-import Link from "next/link";
-import { SectionHeader } from "@/components/ui/SectionHeader";
 import { ContactCTA } from "@/components/home/ContactCTA";
-import { ShieldCheck, Target, Award, Compass, CheckCircle2 } from "lucide-react";
 
 export const metadata = {
-  title: "About Us",
+  title: "About Us | PT Karunia Panca Gemilang",
   description:
-    "Learn about PT Karunia Panca Gemilang's company overview, operational commitment, approach, vision, and mission in wood processing and transportation.",
+    "Company overview, operational capabilities, approach, commitment, and direction of PT Karunia Panca Gemilang in wood processing and transportation services.",
 };
 
 export default function AboutPage() {
@@ -18,38 +14,42 @@ export default function AboutPage() {
       {/* Page Header */}
       <section className="py-20 bg-kpg-bg-offwhite border-b border-kpg-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeader
-            badge="Company Profile"
-            title="About PT Karunia Panca Gemilang"
-            subtitle="Engaged in wood processing, veneer production, plywood trading, and heavy-duty transportation services."
-          />
+          <span className="text-xs font-bold uppercase tracking-widest text-kpg-gold-600">
+            COMPANY PROFILE
+          </span>
+          <h1 className="text-4xl sm:text-5xl font-bold text-kpg-green-900 mt-2">
+            About PT Karunia Panca Gemilang
+          </h1>
+          <p className="text-base text-kpg-text-secondary font-light max-w-2xl mt-3">
+            Engaged in wood processing, veneer processing, plywood trading, and transportation & freight services.
+          </p>
         </div>
       </section>
 
-      {/* Company Overview Section */}
+      {/* 01 WHO WE ARE */}
       <section className="py-20 bg-white border-b border-kpg-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-6 space-y-6">
-              <span className="text-xs font-bold uppercase tracking-widest text-kpg-gold-600">
-                Company Overview
+              <span className="text-xs font-mono font-bold text-kpg-gold-600">
+                01 / WHO WE ARE
               </span>
-              <h2 className="font-heading text-3xl sm:text-4xl font-bold text-kpg-green-900 leading-tight">
-                An Integrated Industrial Wood & Logistics Operation.
+              <h2 className="text-3xl sm:text-4xl font-bold text-kpg-green-900 leading-tight">
+                An Integrated Timber & Freight Operation.
               </h2>
-              <p className="text-base text-kpg-text-secondary leading-relaxed">
-                PT Karunia Panca Gemilang is a company engaged in the wood processing and plywood industry, with a focus on the production of veneer and plywood. We support industrial needs through wood processing operations that prioritize quality, efficiency, product consistency, reliable supply, and professional service.
+              <p className="text-base text-kpg-text-secondary font-light leading-relaxed">
+                PT Karunia Panca Gemilang is an Indonesian company engaged in the wood processing and plywood industry, with operational focus on veneer processing, plywood supply, and cargo freight logistics.
               </p>
-              <p className="text-base text-kpg-text-secondary leading-relaxed">
-                In addition to plywood manufacturing and trading activities, PT Karunia Panca Gemilang also provides transportation and freight services, supporting the distribution of finished products as well as the delivery of materials required for operational needs.
+              <p className="text-base text-kpg-text-secondary font-light leading-relaxed">
+                We support industrial and commercial requirements by combining processing operations, material supply, and reliable heavy cargo transport.
               </p>
             </div>
 
-            <div className="lg:col-span-6 relative">
-              <div className="relative rounded-2xl overflow-hidden shadow-premium border-2 border-kpg-border bg-kpg-green-900 h-[380px] w-full">
+            <div className="lg:col-span-6">
+              <div className="relative rounded-2xl overflow-hidden border border-kpg-border h-[380px] w-full img-zoom-container">
                 <Image
                   src="https://images.unsplash.com/photo-1546484475-7f7bd55792da?q=80&w=1200&auto=format&fit=crop"
-                  alt="PT Karunia Panca Gemilang Processing Facility"
+                  alt="PT Karunia Panca Gemilang Facility"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -60,118 +60,118 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Our Approach & Our Commitment */}
+      {/* 02 WHAT WE DO */}
       <section className="py-20 bg-kpg-bg-offwhite border-b border-kpg-border">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Our Approach */}
-            <div className="bg-white p-8 rounded-2xl border border-kpg-border shadow-subtle space-y-4">
-              <div className="w-12 h-12 rounded-lg bg-kpg-green-50 text-kpg-gold-500 flex items-center justify-center border border-kpg-green-100">
-                <ShieldCheck className="w-6 h-6" />
-              </div>
-              <h3 className="font-heading text-2xl font-bold text-kpg-green-900">
-                Our Approach
-              </h3>
-              <p className="text-sm text-kpg-text-secondary leading-relaxed">
-                We believe reliable business partnerships are built through a simple formula:
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+          <div className="max-w-2xl space-y-2">
+            <span className="text-xs font-mono font-bold text-kpg-gold-600">
+              02 / WHAT WE DO
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-kpg-green-900">
+              Three Integrated Business Capabilities
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="border-t-2 border-kpg-gold-500 pt-6 space-y-3">
+              <h3 className="text-xl font-bold text-kpg-green-900">Wood Processing</h3>
+              <p className="text-xs text-kpg-text-secondary font-light leading-relaxed">
+                Processing wood materials through controlled operations to support product supply requirements.
               </p>
-              <div className="p-4 rounded-xl bg-kpg-green-900 text-white font-semibold text-center text-sm tracking-wide border-t-2 border-kpg-gold-500">
-                Quality + Consistency + Reliability + Trust
-              </div>
             </div>
 
-            {/* Our Commitment */}
-            <div className="bg-white p-8 rounded-2xl border border-kpg-border shadow-subtle space-y-4">
-              <div className="w-12 h-12 rounded-lg bg-kpg-green-50 text-kpg-gold-500 flex items-center justify-center border border-kpg-green-100">
-                <Award className="w-6 h-6" />
-              </div>
-              <h3 className="font-heading text-2xl font-bold text-kpg-green-900">
-                Our Commitment
-              </h3>
-              <p className="text-sm text-kpg-text-secondary leading-relaxed">
-                We are committed to continuously improving our operational capabilities and delivering dependable products and services to our customers and business partners throughout Indonesia.
+            <div className="border-t-2 border-kpg-gold-500 pt-6 space-y-3">
+              <h3 className="text-xl font-bold text-kpg-green-900">Plywood & Veneer</h3>
+              <p className="text-xs text-kpg-text-secondary font-light leading-relaxed">
+                Providing plywood products and processed veneer sheets for industrial and commercial applications.
+              </p>
+            </div>
+
+            <div className="border-t-2 border-kpg-gold-500 pt-6 space-y-3">
+              <h3 className="text-xl font-bold text-kpg-green-900">Transportation & Freight</h3>
+              <p className="text-xs text-kpg-text-secondary font-light leading-relaxed">
+                Heavy-duty cargo transportation supporting product distribution and raw material logistics.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Vision & Mission (Our Direction) */}
-      <section className="py-24 bg-white border-b border-kpg-border">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeader
-            badge="Strategic Direction"
-            title="Our Direction"
-            subtitle="Guiding our operational growth and long-term customer partnerships."
-            align="center"
-            className="mb-16"
-          />
+      {/* 03 OUR APPROACH */}
+      <section className="py-20 bg-white border-b border-kpg-border">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+          <div className="max-w-2xl space-y-2">
+            <span className="text-xs font-mono font-bold text-kpg-gold-600">
+              03 / OUR APPROACH
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-kpg-green-900">
+              Factual Operational Principles
+            </h2>
+          </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-            {/* Vision */}
-            <div className="lg:col-span-5 bg-kpg-green-900 text-white p-8 sm:p-10 rounded-2xl border-t-4 border-kpg-gold-500 shadow-premium flex flex-col justify-between">
-              <div className="space-y-4">
-                <div className="flex items-center gap-2 text-kpg-gold-400">
-                  <Compass className="w-6 h-6" />
-                  <span className="text-xs font-bold uppercase tracking-widest">
-                    Vision Statement
-                  </span>
-                </div>
-                <h3 className="font-heading text-3xl font-bold leading-snug">
-                  To become a trusted partner in wood products, plywood supply, and transportation services in Indonesia.
-                </h3>
-              </div>
-              <p className="text-xs text-gray-300 pt-8">
-                PT Karunia Panca Gemilang Strategic Goals
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="border-t border-kpg-border pt-6 space-y-2">
+              <span className="text-xs font-mono text-kpg-gold-600 font-bold">01. PRODUCT</span>
+              <h4 className="text-base font-bold text-kpg-green-900">Product Sourcing</h4>
+              <p className="text-xs text-kpg-text-secondary font-light leading-relaxed">
+                Understanding product requirements for industrial and commercial applications.
               </p>
             </div>
 
-            {/* Mission */}
-            <div className="lg:col-span-7 bg-kpg-bg-offwhite p-8 sm:p-10 rounded-2xl border border-kpg-border space-y-6">
-              <div className="flex items-center gap-2 text-kpg-gold-600">
-                <Target className="w-6 h-6" />
-                <span className="text-xs font-bold uppercase tracking-widest">
-                  Mission Directives
-                </span>
-              </div>
-              <h3 className="font-heading text-2xl font-bold text-kpg-green-900">
-                Operational Objectives
-              </h3>
+            <div className="border-t border-kpg-border pt-6 space-y-2">
+              <span className="text-xs font-mono text-kpg-gold-600 font-bold">02. PROCESS</span>
+              <h4 className="text-base font-bold text-kpg-green-900">Operational Execution</h4>
+              <p className="text-xs text-kpg-text-secondary font-light leading-relaxed">
+                Consistent execution across processing, veneer, and trading.
+              </p>
+            </div>
 
-              <ul className="space-y-4">
-                <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-kpg-gold-500 shrink-0 mt-0.5" />
-                  <span className="text-sm font-medium text-kpg-text-primary">
-                    Deliver reliable wood and plywood products tailored to commercial needs.
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-kpg-gold-500 shrink-0 mt-0.5" />
-                  <span className="text-sm font-medium text-kpg-text-primary">
-                    Maintain consistent product quality across all veneer and plywood output.
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-kpg-gold-500 shrink-0 mt-0.5" />
-                  <span className="text-sm font-medium text-kpg-text-primary">
-                    Provide dependable transportation support for regional distribution.
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-kpg-gold-500 shrink-0 mt-0.5" />
-                  <span className="text-sm font-medium text-kpg-text-primary">
-                    Improve operational efficiency continuously across processing and logistics.
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-kpg-gold-500 shrink-0 mt-0.5" />
-                  <span className="text-sm font-medium text-kpg-text-primary">
-                    Build long-term relationships with customers and business partners.
-                  </span>
-                </li>
-              </ul>
+            <div className="border-t border-kpg-border pt-6 space-y-2">
+              <span className="text-xs font-mono text-kpg-gold-600 font-bold">03. QUALITY</span>
+              <h4 className="text-base font-bold text-kpg-green-900">Process Consistency</h4>
+              <p className="text-xs text-kpg-text-secondary font-light leading-relaxed">
+                Focus on product and process consistency to meet client expectations.
+              </p>
+            </div>
+
+            <div className="border-t border-kpg-border pt-6 space-y-2">
+              <span className="text-xs font-mono text-kpg-gold-600 font-bold">04. DELIVERY</span>
+              <h4 className="text-base font-bold text-kpg-green-900">Freight Logistics</h4>
+              <p className="text-xs text-kpg-text-secondary font-light leading-relaxed">
+                Supporting product movement through KPG Transportation.
+              </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* 04 OUR COMMITMENT */}
+      <section className="py-20 bg-kpg-bg-offwhite border-b border-kpg-border">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl space-y-4 text-left">
+          <span className="text-xs font-mono font-bold text-kpg-gold-600">
+            04 / OUR COMMITMENT
+          </span>
+          <h2 className="text-3xl font-bold text-kpg-green-900">
+            Operational Reliability
+          </h2>
+          <p className="text-base text-kpg-text-secondary font-light leading-relaxed">
+            We are committed to maintaining operational focus across our processing activities, product supply channels, and transportation services, delivering dependable service to our clients and business partners.
+          </p>
+        </div>
+      </section>
+
+      {/* 05 OUR DIRECTION */}
+      <section className="py-20 bg-white border-b border-kpg-border">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl space-y-4 text-left">
+          <span className="text-xs font-mono font-bold text-kpg-gold-600">
+            05 / OUR DIRECTION
+          </span>
+          <h2 className="text-3xl font-bold text-kpg-green-900">
+            Strategic Direction
+          </h2>
+          <p className="text-base text-kpg-text-secondary font-light leading-relaxed">
+            Our goal is to build long-term corporate relationships by maintaining consistency in wood processing, veneer supply, plywood trading, and cargo logistics services.
+          </p>
         </div>
       </section>
 

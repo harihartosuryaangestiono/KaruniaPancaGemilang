@@ -1,103 +1,87 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { SectionHeader } from "@/components/ui/SectionHeader";
 import { ContactCTA } from "@/components/home/ContactCTA";
-import { Layers, CheckCircle2, FileText, Info, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 export const metadata = {
-  title: "Veneer Materials - PT Karunia Panca Gemilang",
+  title: "Veneer | PT Karunia Panca Gemilang",
   description:
-    "Quality veneer materials processed to support plywood manufacturing and industrial applications. Produced by PT Karunia Panca Gemilang.",
+    "Processed veneer materials for plywood manufacturing and industrial wood applications by PT Karunia Panca Gemilang.",
 };
 
 export default function VeneerPage() {
   return (
     <>
-      {/* Hero */}
-      <section className="relative py-24 bg-kpg-green-900 text-white overflow-hidden">
-        <div className="absolute inset-0 z-0 opacity-40">
-          <Image
-            src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=1600&auto=format&fit=crop"
-            alt="Veneer Production PT Karunia Panca Gemilang"
-            fill
-            className="object-cover object-center"
-            priority
-          />
-        </div>
-        <div className="absolute inset-0 bg-gradient-to-r from-kpg-green-900 via-kpg-green-900/90 to-transparent z-10" />
-
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
-          <div className="max-w-3xl space-y-4">
-            <span className="text-xs font-bold uppercase tracking-widest text-kpg-gold-400">
-              Product Portfolio • Veneer
-            </span>
-            <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight">
-              Veneer Materials
-            </h1>
-            <p className="text-base sm:text-xl text-gray-200 leading-relaxed">
-              Processed wood materials supporting plywood manufacturing and industrial applications.
-            </p>
-          </div>
+      {/* Header */}
+      <section className="py-20 bg-kpg-bg-offwhite border-b border-kpg-border">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <span className="text-xs font-bold uppercase tracking-widest text-kpg-gold-600">
+            PRODUCTS / VENEER
+          </span>
+          <h1 className="text-4xl sm:text-5xl font-bold text-kpg-green-900 mt-2">
+            Veneer Materials
+          </h1>
+          <p className="text-base text-kpg-text-secondary font-light max-w-2xl mt-3">
+            Processed veneer materials supporting plywood manufacturing and industrial applications.
+          </p>
         </div>
       </section>
 
-      {/* Overview */}
+      {/* Product Overview Section */}
       <section className="py-24 bg-white border-b border-kpg-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            {/* Text */}
             <div className="lg:col-span-6 space-y-6">
-              <span className="text-xs font-bold uppercase tracking-widest text-kpg-gold-600">
-                Product Overview
+              <span className="text-xs font-mono font-bold text-kpg-gold-600">
+                PRODUCT OVERVIEW & PROCESSING CONTEXT
               </span>
-              <h2 className="font-heading text-3xl sm:text-4xl font-bold text-kpg-green-900 leading-tight">
-                Precision Veneer Peeling & Processing
+              <h2 className="text-3xl sm:text-4xl font-bold text-kpg-green-900 leading-tight">
+                Veneer Processing
               </h2>
-              <p className="text-base text-kpg-text-secondary leading-relaxed">
-                PT Karunia Panca Gemilang processes wood materials into veneer sheets tailored for plywood manufacturing and industrial processing. Our veneer operations emphasize controlled thickness, smooth surface peel quality, and reliable raw material supply.
+              <p className="text-base text-kpg-text-secondary font-light leading-relaxed">
+                PT Karunia Panca Gemilang processes wood materials into veneer sheets tailored for plywood production and industrial wood manufacturing. Our processing operations emphasize operational focus and product supply reliability.
               </p>
 
-              <div className="space-y-3 pt-2">
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-kpg-gold-500 shrink-0 mt-0.5" />
-                  <span className="text-sm font-medium text-kpg-text-primary">
-                    Ideal for core and face layer plywood manufacturing.
-                  </span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-kpg-gold-500 shrink-0 mt-0.5" />
-                  <span className="text-sm font-medium text-kpg-text-primary">
-                    Consistent moisture preparation and grain texture.
-                  </span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-kpg-gold-500 shrink-0 mt-0.5" />
-                  <span className="text-sm font-medium text-kpg-text-primary">
-                    Reliable continuous supply for manufacturing plants.
-                  </span>
-                </div>
+              <ul className="space-y-2 pt-1 text-sm text-kpg-text-secondary">
+                <li className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-kpg-gold-500" />
+                  <span>Processed veneer sheets for core and face layer manufacturing</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-kpg-gold-500" />
+                  <span>Suitable for plywood production and wood manufacturing plants</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-kpg-gold-500" />
+                  <span>Supported by KPG freight logistics and delivery</span>
+                </li>
+              </ul>
+
+              <div className="pt-2">
+                <p className="text-xs text-kpg-text-muted italic">
+                  * Product specifications available upon request.
+                </p>
               </div>
 
-              <div className="pt-4 p-4 rounded-xl bg-kpg-bg-offwhite border border-kpg-border flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-                <div className="flex items-center gap-2 text-xs text-kpg-text-muted">
-                  <Info className="w-4 h-4 text-kpg-gold-500 shrink-0" />
-                  <span>Product specifications available upon request.</span>
-                </div>
+              <div className="pt-2">
                 <Link
                   href="/contact"
-                  className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-kpg-green-900 hover:text-kpg-gold-600 transition-colors shrink-0"
+                  className="inline-flex items-center gap-2 bg-kpg-green-900 hover:bg-kpg-green-800 text-white font-bold text-xs uppercase tracking-wider px-6 py-3 rounded-lg transition-colors group"
                 >
-                  <FileText className="w-4 h-4 text-kpg-gold-500" />
-                  <span>Request Specifications</span>
+                  <span>Inquire About Veneer</span>
+                  <ArrowRight className="w-4 h-4 text-kpg-gold-400 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
             </div>
 
-            <div className="lg:col-span-6 relative">
-              <div className="relative rounded-2xl overflow-hidden shadow-premium border-2 border-kpg-border h-[400px] w-full bg-kpg-green-900">
+            {/* Large Image */}
+            <div className="lg:col-span-6">
+              <div className="relative rounded-2xl overflow-hidden border border-kpg-border h-[400px] w-full img-zoom-container">
                 <Image
                   src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=1200&auto=format&fit=crop"
-                  alt="PT Karunia Panca Gemilang Veneer Peeling & Processing"
+                  alt="PT Karunia Panca Gemilang Veneer Processing"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -109,37 +93,34 @@ export default function VeneerPage() {
       </section>
 
       {/* Applications */}
-      <section className="py-24 bg-kpg-bg-offwhite border-b border-kpg-border">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-          <SectionHeader
-            badge="Use Cases"
-            title="Applications"
-            subtitle="Suitable applications vary according to product specifications and customer requirements."
-          />
+      <section className="py-20 bg-kpg-bg-offwhite border-b border-kpg-border">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+          <div className="max-w-2xl space-y-2">
+            <span className="text-xs font-mono font-bold text-kpg-gold-600">
+              APPLICATIONS
+            </span>
+            <h2 className="text-3xl font-bold text-kpg-green-900">
+              Primary Applications
+            </h2>
+          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-white p-8 rounded-xl border border-kpg-border space-y-3">
-              <h3 className="font-heading text-xl font-bold text-kpg-green-900">
-                Plywood Core Layers
-              </h3>
-              <p className="text-xs text-kpg-text-secondary leading-relaxed">
-                Core veneer sheets engineered for internal cross-lamination bonding.
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="border-t-2 border-kpg-gold-500 pt-6 space-y-2">
+              <h3 className="text-lg font-bold text-kpg-green-900">Plywood Core Layers</h3>
+              <p className="text-xs text-kpg-text-secondary font-light leading-relaxed">
+                Core veneer sheets processed for plywood layer lamination.
               </p>
             </div>
-            <div className="bg-white p-8 rounded-xl border border-kpg-border space-y-3">
-              <h3 className="font-heading text-xl font-bold text-kpg-green-900">
-                Plywood Face Layers
-              </h3>
-              <p className="text-xs text-kpg-text-secondary leading-relaxed">
-                Smooth face veneer sheets supporting outer aesthetic and structural finishing.
+            <div className="border-t-2 border-kpg-gold-500 pt-6 space-y-2">
+              <h3 className="text-lg font-bold text-kpg-green-900">Plywood Face Layers</h3>
+              <p className="text-xs text-kpg-text-secondary font-light leading-relaxed">
+                Face veneer sheets supporting outer plywood surface requirements.
               </p>
             </div>
-            <div className="bg-white p-8 rounded-xl border border-kpg-border space-y-3">
-              <h3 className="font-heading text-xl font-bold text-kpg-green-900">
-                Wood Product Manufacturing
-              </h3>
-              <p className="text-xs text-kpg-text-secondary leading-relaxed">
-                Raw veneer stock supplied to industrial processors and wood manufacturing plants.
+            <div className="border-t-2 border-kpg-gold-500 pt-6 space-y-2">
+              <h3 className="text-lg font-bold text-kpg-green-900">Wood Manufacturing</h3>
+              <p className="text-xs text-kpg-text-secondary font-light leading-relaxed">
+                Raw veneer stock supplied to industrial wood manufacturing plants.
               </p>
             </div>
           </div>

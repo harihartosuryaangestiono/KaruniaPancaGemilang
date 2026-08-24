@@ -1,14 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { SectionHeader } from "@/components/ui/SectionHeader";
 import { ContactCTA } from "@/components/home/ContactCTA";
-import { CheckCircle2, FileText, Layers, Boxes, Info } from "lucide-react";
 
 export const metadata = {
-  title: "Products - Veneer & Plywood",
+  title: "Products | PT Karunia Panca Gemilang",
   description:
-    "Explore veneer and plywood products by PT Karunia Panca Gemilang. Processed for industrial, commercial, and manufacturing requirements.",
+    "Explore veneer and plywood products by PT Karunia Panca Gemilang, processed for industrial, commercial, and construction requirements.",
 };
 
 export default function ProductsPage() {
@@ -17,72 +15,68 @@ export default function ProductsPage() {
       {/* Header */}
       <section className="py-20 bg-kpg-bg-offwhite border-b border-kpg-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeader
-            badge="Product Portfolio"
-            title="Veneer & Plywood Solutions"
-            subtitle="Providing high-grade wood materials and plywood trading options for commercial and manufacturing partners."
-          />
+          <span className="text-xs font-bold uppercase tracking-widest text-kpg-gold-600">
+            PRODUCT PORTFOLIO
+          </span>
+          <h1 className="text-4xl sm:text-5xl font-bold text-kpg-green-900 mt-2">
+            Plywood & Veneer Portfolio
+          </h1>
+          <p className="text-base text-kpg-text-secondary font-light max-w-2xl mt-3">
+            Providing wood veneer and plywood supply options for commercial and manufacturing partners.
+          </p>
         </div>
       </section>
 
       {/* Main Categories Section */}
-      <section className="py-24 bg-white border-b border-kpg-border space-y-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Category 1: Veneer */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-24">
+      <section className="py-24 bg-white border-b border-kpg-border">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
+          {/* Category 1: Plywood */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-6 space-y-6">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-kpg-green-50 text-kpg-green-900 text-xs font-bold uppercase tracking-wider">
-                <Layers className="w-4 h-4 text-kpg-gold-500" />
-                <span>Primary Wood Product</span>
-              </div>
-              <h2 className="font-heading text-4xl font-bold text-kpg-green-900">
-                Veneer Materials
+              <span className="text-xs font-mono font-bold text-kpg-gold-600">
+                PRODUCT 01
+              </span>
+              <h2 className="text-3xl sm:text-4xl font-bold text-kpg-green-900">
+                Plywood Products
               </h2>
-              <p className="text-base text-kpg-text-secondary leading-relaxed">
-                Quality veneer materials processed to support plywood manufacturing and industrial applications. Produced with a focus on dimensional accuracy, smooth peel quality, and consistent thickness.
+              <p className="text-base text-kpg-text-secondary font-light leading-relaxed">
+                Plywood products available to support various industrial, commercial, and construction requirements. Supplied with an emphasis on product consistency and reliable logistics delivery.
               </p>
 
-              <div className="space-y-3 pt-2">
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-kpg-gold-500 shrink-0 mt-0.5" />
-                  <span className="text-sm font-medium text-kpg-text-primary">
-                    Suitable for core and face layer manufacturing.
-                  </span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-kpg-gold-500 shrink-0 mt-0.5" />
-                  <span className="text-sm font-medium text-kpg-text-primary">
-                    Consistent moisture level and grain preparation.
-                  </span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-kpg-gold-500 shrink-0 mt-0.5" />
-                  <span className="text-sm font-medium text-kpg-text-primary">
-                    Reliable continuous supply for manufacturing plants.
-                  </span>
-                </div>
-              </div>
+              <ul className="space-y-2 pt-1 text-sm text-kpg-text-secondary">
+                <li className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-kpg-gold-500" />
+                  <span>Suitable for construction, furniture, and industrial packaging</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-kpg-gold-500" />
+                  <span>Available for commercial supply and trading contracts</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-kpg-gold-500" />
+                  <span>Supported by KPG transportation & freight delivery</span>
+                </li>
+              </ul>
 
-              <div className="pt-4 p-4 rounded-xl bg-kpg-bg-offwhite border border-kpg-border flex items-center justify-between">
-                <div className="flex items-center gap-2 text-xs text-kpg-text-muted">
-                  <Info className="w-4 h-4 text-kpg-gold-500 shrink-0" />
-                  <span>Product specifications available upon request.</span>
-                </div>
+              <p className="text-xs text-kpg-text-muted italic pt-1">
+                * Exact product specifications available upon request.
+              </p>
+
+              <div className="pt-2">
                 <Link
-                  href="/contact"
-                  className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-kpg-green-900 hover:text-kpg-gold-600 transition-colors"
+                  href="/products/plywood"
+                  className="inline-flex items-center gap-2 bg-kpg-green-900 hover:bg-kpg-green-800 text-white font-bold text-xs uppercase tracking-wider px-6 py-3 rounded-lg transition-colors"
                 >
-                  <FileText className="w-4 h-4 text-kpg-gold-500" />
-                  <span>Request Info</span>
+                  <span>Explore Plywood Details</span>
                 </Link>
               </div>
             </div>
 
             <div className="lg:col-span-6">
-              <div className="relative rounded-2xl overflow-hidden shadow-premium border-2 border-white bg-kpg-green-900 h-[380px] w-full">
+              <div className="relative rounded-2xl overflow-hidden border border-kpg-border h-[360px] w-full img-zoom-container">
                 <Image
-                  src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=1200&auto=format&fit=crop"
-                  alt="PT Karunia Panca Gemilang Veneer Sheet Processing"
+                  src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=1200&auto=format&fit=crop"
+                  alt="PT Karunia Panca Gemilang Plywood Storage"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -91,61 +85,53 @@ export default function ProductsPage() {
             </div>
           </div>
 
-          {/* Category 2: Plywood */}
+          {/* Category 2: Veneer */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-6 lg:order-2 space-y-6">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-kpg-green-50 text-kpg-green-900 text-xs font-bold uppercase tracking-wider">
-                <Boxes className="w-4 h-4 text-kpg-gold-500" />
-                <span>Commercial & Industrial Trading</span>
-              </div>
-              <h2 className="font-heading text-4xl font-bold text-kpg-green-900">
-                Plywood Products
+              <span className="text-xs font-mono font-bold text-kpg-gold-600">
+                PRODUCT 02
+              </span>
+              <h2 className="text-3xl sm:text-4xl font-bold text-kpg-green-900">
+                Veneer Materials
               </h2>
-              <p className="text-base text-kpg-text-secondary leading-relaxed">
-                Reliable plywood products designed to support various industrial, commercial, and construction requirements. Sourced and traded with an emphasis on core density, face finish, and structural dependability.
+              <p className="text-base text-kpg-text-secondary font-light leading-relaxed">
+                Processed veneer materials produced to support plywood manufacturing operations and industrial wood applications.
               </p>
 
-              <div className="space-y-3 pt-2">
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-kpg-gold-500 shrink-0 mt-0.5" />
-                  <span className="text-sm font-medium text-kpg-text-primary">
-                    Ideal for construction formwork, furniture, & industrial packaging.
-                  </span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-kpg-gold-500 shrink-0 mt-0.5" />
-                  <span className="text-sm font-medium text-kpg-text-primary">
-                    Uniform surface finish and structural integrity.
-                  </span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-kpg-gold-500 shrink-0 mt-0.5" />
-                  <span className="text-sm font-medium text-kpg-text-primary">
-                    Supported by KPG freight transportation for direct job-site delivery.
-                  </span>
-                </div>
-              </div>
+              <ul className="space-y-2 pt-1 text-sm text-kpg-text-secondary">
+                <li className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-kpg-gold-500" />
+                  <span>Processed veneer sheets for core and face layer manufacturing</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-kpg-gold-500" />
+                  <span>Suitable for plywood production and wood manufacturing plants</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-kpg-gold-500" />
+                  <span>Supported by KPG freight logistics and delivery</span>
+                </li>
+              </ul>
 
-              <div className="pt-4 p-4 rounded-xl bg-kpg-bg-offwhite border border-kpg-border flex items-center justify-between">
-                <div className="flex items-center gap-2 text-xs text-kpg-text-muted">
-                  <Info className="w-4 h-4 text-kpg-gold-500 shrink-0" />
-                  <span>Product specifications available upon request.</span>
-                </div>
+              <p className="text-xs text-kpg-text-muted italic pt-1">
+                * Exact product specifications available upon request.
+              </p>
+
+              <div className="pt-2">
                 <Link
-                  href="/contact"
-                  className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-kpg-green-900 hover:text-kpg-gold-600 transition-colors"
+                  href="/products/veneer"
+                  className="inline-flex items-center gap-2 bg-kpg-green-900 hover:bg-kpg-green-800 text-white font-bold text-xs uppercase tracking-wider px-6 py-3 rounded-lg transition-colors"
                 >
-                  <FileText className="w-4 h-4 text-kpg-gold-500" />
-                  <span>Request Info</span>
+                  <span>Explore Veneer Details</span>
                 </Link>
               </div>
             </div>
 
             <div className="lg:col-span-6 lg:order-1">
-              <div className="relative rounded-2xl overflow-hidden shadow-premium border-2 border-white bg-kpg-green-900 h-[380px] w-full">
+              <div className="relative rounded-2xl overflow-hidden border border-kpg-border h-[360px] w-full img-zoom-container">
                 <Image
-                  src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=1200&auto=format&fit=crop"
-                  alt="PT Karunia Panca Gemilang Plywood Storage & Warehouse"
+                  src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=1200&auto=format&fit=crop"
+                  alt="PT Karunia Panca Gemilang Veneer Processing"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"
